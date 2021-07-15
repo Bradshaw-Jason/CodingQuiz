@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Enter your description here" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="Enter your description here" />
+  <title>Coding Quiz</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Header to display time remaining on quiz and linke to highscores -->
+  <header class=head>
+    <div id=highscores>View Highscores</div>
+    <div>Time remaining: <span id=timer>10</span></div>
+  </header>
+
+  <!-- Main section to display quiz -->
+  <section>
+    <div class=intro>
+      <h1>Welcome to the Coding Quiz!</h1>
+      <p>please press the button below to start the quiz</p>
+      <button id=startBtn> Start</button>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+    <div id=question1>
+      <h2></h2>
+      <p class=question> whats your favorite color?</p>
+      <button class="answerBtn correct">A: Orange</button>
+      <button class=answerBtn>B: Yellow</button>
+      <button class=answerBtn>C: Purple</button>
+    </div>
+
+    <div id=question2>
+      <h2></h2>
+      <p class=question>whats your favorite fruit?</p>
+      <button class=answerBtn>A: Apple</button>
+      <button class=answerBtn>B: Orange</button>
+      <button class="answerBtn, correct">C: Kiwi</button>
+    </div>
+
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
